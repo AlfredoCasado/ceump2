@@ -2,4 +2,8 @@
 
 == Software necesario para la asignatura ==
 
-  * http://netbeans.org/downloads/ IDE netbeans
+  * [http://netbeans.org/downloads/ IDE netbeans]: Descargar la opción Java SE de 54 MB o bien la opción Java de 214 MB que incluye además de las opciones básicas de java las opciones necesarias para desarrollo web.
+
+== libros y otros materiales ==
+
+  * libro de [http://www.terra.es/personal/jfvelez/libro/libro.html josé velez técnicas avanzadas de diseño de software]
