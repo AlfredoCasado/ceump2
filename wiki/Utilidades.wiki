@@ -8,4 +8,4 @@
 
 == libros y otros materiales ==
 
-  * libro de [http://www.terra.es/personal/jfvelez/libro/libro.html josé velez técnicas avanzadas de diseño de software]
+  * libro [http://www.terra.es/personal/jfvelez/libro/libro.html técnicas avanzadas de diseño de software] de José Velez
