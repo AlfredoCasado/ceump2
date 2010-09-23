@@ -13,9 +13,9 @@ public class SistemaCargaDeTrenes {
         for (Tren tren : trenes) {
             if (tren.tieneEspacioDisponiblePara(mercancia)) {
                 tren.guardar(mercancia);
+                break;
             }
         }
     }
-
 
 }
