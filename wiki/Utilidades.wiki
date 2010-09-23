@@ -13,3 +13,4 @@
 == Webs de interes ==
 
    * [http://yuml.me/ aplicación web que permite crear diagramas UML simples de manera sencilla]
+   * [http://www.websequencediagrams.com/ aplicación web para crear diagramas de secuencia UML]
