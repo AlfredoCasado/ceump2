@@ -9,3 +9,7 @@
 == libros y otros materiales ==
 
   * libro [http://www.terra.es/personal/jfvelez/libro/libro.html técnicas avanzadas de diseño de software] de José Velez
+
+== Webs de interes ==
+
+   * [http://yuml.me/ aplicación web que permite crear diagramas UML simples de manera sencilla]
