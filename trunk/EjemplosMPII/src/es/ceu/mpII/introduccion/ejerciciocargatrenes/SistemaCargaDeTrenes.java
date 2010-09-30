@@ -2,7 +2,13 @@ package es.ceu.mpII.introduccion.ejerciciocargatrenes;
 
 public class SistemaCargaDeTrenes {
 
-    void cargarTrenes(Almacen almacen, Tren[] trenes) {
+    private final Almacen almacen;
+
+    public SistemaCargaDeTrenes(Almacen almacen) {
+        this.almacen = almacen;
+    }
+
+    void cargarTrenes(Tren[] trenes) {
         while(almacen.noEstaVacio()) {
             Mercancia mercancia = almacen.dameLaSiguienteMercancia();
             intentarGuardarLaMercanciaEnAlgunTren(trenes, mercancia);
