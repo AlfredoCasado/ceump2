@@ -1,6 +1,6 @@
 package es.ceu.mpII.introduccion.ejerciciocargatrenes;
 
-class Almacen {
+public class Almacen {
 
     private final Mercancia[] mercancias;
     private int mercanciaActual = 0;
