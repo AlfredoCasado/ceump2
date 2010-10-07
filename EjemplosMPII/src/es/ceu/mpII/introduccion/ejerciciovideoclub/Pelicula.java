@@ -8,19 +8,29 @@ public class Pelicula {
     public Pelicula(String nombre, Copia[] copiasDisponibles) {
         this.nombre = nombre;
         this.copias = copiasDisponibles;
+        for (Copia copia : copiasDisponibles) {
+            copia.eresCopiaDe(this);
+        }
     }
 
     boolean es(String nombreDeLaPelicula) {
         return nombreDeLaPelicula.equals(nombre);
     }
 
-    boolean hayCopiasDisponiblesParaAlquilar() {
+    Copia dameUnaCopiaSiHayDisponibles() {
         for (Copia copia : copias) {
             if (copia.estaDisponibleParaAlquilar()) {
-                return true;
+                return copia;
             }
         }
-        return false;
+        return null;
     }
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
+
+
 
 }
