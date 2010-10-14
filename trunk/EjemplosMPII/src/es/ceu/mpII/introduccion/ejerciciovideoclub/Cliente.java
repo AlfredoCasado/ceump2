@@ -4,10 +4,12 @@ public class Cliente {
 
     private final String nombre;
     private Alquiler[] alquileresRealizados = new Alquiler[50];
+    private PintorInformes[] pintores;
     private int contadorAlquileresRealizados = 0;
 
-    public Cliente(String nombre) {
+    public Cliente(String nombre, PintorInformes[] pintores) {
         this.nombre = nombre;
+        this.pintores = pintores;
     }
 
     public boolean tuNombreEs(String nombreCliente) {
@@ -15,7 +17,7 @@ public class Cliente {
     }
 
     public void realizarAlquiler(Copia copia, int numeroDias) {
-        Alquiler nuevoAlquiler = new Alquiler(copia,numeroDias);
+        Alquiler nuevoAlquiler = new Alquiler(copia, numeroDias);
         alquileresRealizados[contadorAlquileresRealizados] = nuevoAlquiler;
         contadorAlquileresRealizados++;
     }
@@ -24,15 +26,23 @@ public class Cliente {
         return contadorAlquileresRealizados;
     }
 
-    public void pintarInformeDeAlquileresRealizados() {
-        int importeTotal = 0;
-        for (int i = 0; i<contadorAlquileresRealizados; i++) {
-            Alquiler alquiler = alquileresRealizados[i];
-            importeTotal+= alquiler.importe();
-            System.out.println(alquiler);
+    public void pintarInformeDeAlquileresRealizados(String formato) {
+        PintorInformes pintorInformes = buscarPintorInformesQueSoporte(formato);
+        if (pintorInformes != null) {
+            pintorInformes.pintarInforme(alquileresRealizados, contadorAlquileresRealizados);
+        } else {
+            System.out.println("no tenemos ningún pintor que soporte el formato: " + formato);
         }
-
-        System.out.println("total: " + importeTotal);
     }
 
+    private PintorInformes buscarPintorInformesQueSoporte(String formato) {
+        for (PintorInformes pintor : pintores) {
+            if (pintor.formatoSoportado().equals(formato)) {
+                return pintor;
+            }
+        }
+        return null;
+    }
+
+    
 }

@@ -42,15 +42,20 @@ public class VideoclubTest {
 
         Pelicula pelicula = videoclub.dameLaPeliculaSiEstaDisponible("Up");
         Copia copia = pelicula.dameUnaCopiaSiHayDisponibles();
-
         Cliente cliente = videoclub.buscarClientePorNombre("alfredo");
+
         cliente.realizarAlquiler(copia, 3);
         cliente.realizarAlquiler(copia, 2);
 
-        cliente.pintarInformeDeAlquileresRealizados();
+        cliente.pintarInformeDeAlquileresRealizados("texto");
+        cliente.pintarInformeDeAlquileresRealizados("html");
     }
 
     private Videoclub crearVideoclub() {
+        PintorInformes[] pintores = new PintorInformes[2];
+        pintores[0] = new PintorInformesEnTexto();
+        pintores[1] = new PintorInformesHtml();
+
         Copia[] copiasDisponibles = new Copia[1];
         copiasDisponibles[0] = new Copia(true);
 
@@ -58,7 +63,7 @@ public class VideoclubTest {
         peliculasDisponibles[0] = new Pelicula("Up", copiasDisponibles);
 
         Cliente[] clientesDelVideoclub = new Cliente[1];
-        clientesDelVideoclub[0] = new Cliente("alfredo");
+        clientesDelVideoclub[0] = new Cliente("alfredo", pintores);
 
         return new Videoclub(peliculasDisponibles, clientesDelVideoclub);
     }
