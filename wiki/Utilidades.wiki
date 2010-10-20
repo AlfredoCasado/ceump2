@@ -4,6 +4,7 @@
   
   * [http://www.oracle.com/technetwork/java/javase/downloads/jdk6-jsp-136632.html JDK (Java development kit) 1.6], el jdk es necesario para poder desarrollar aplicaciones java, incluye entre otras muchas cosas el compilador javac y las librerías estándar de java.
   * [http://netbeans.org/downloads/ IDE netbeans]: Descargar la opción Java SE de 54 MB o bien la opción Java de 214 MB que incluye además de las opciones básicas de java las opciones necesarias para desarrollo web.
+  * [http://staruml.sourceforge.net/en/ starUml]
 
 
 == libros y otros materiales ==
