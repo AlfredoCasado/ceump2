@@ -18,6 +18,8 @@
     * [https://docs.google.com/present/view?id=dhp366fd_318ddkq4bg4 modelado OO]
 
 == Tema 4. P00 en Java. API de Java ==
+
+    *  [https://docs.google.com/present/view?id=dhp366fd_337cnj2g7gp El paquete java.lang]
 == Tema 5. API de colecciones ==
 == Tema 6. Tratamiento de excepciones ==
 == Tema 7. API java.io ==
