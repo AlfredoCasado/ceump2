@@ -4,8 +4,8 @@ import es.ceu.mpII.polimorfismo.enviodenotas.Alumno;
 
 public class NotificadorMail implements Notificador {
 
-    public boolean soportasElMecanismoDe(String notificacion) {
-        return notificacion.equals("mail");
+    public boolean soportasElMecanismoDe(MecanismoDeNotificacion notificacion) {
+        return notificacion.equals(MecanismoDeNotificacion.MAIL);
     }
 
     public void enviarNotificacionA(Alumno alumno) {
