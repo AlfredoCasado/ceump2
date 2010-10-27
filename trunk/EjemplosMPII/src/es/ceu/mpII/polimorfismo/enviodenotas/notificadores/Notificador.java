@@ -4,7 +4,7 @@ import es.ceu.mpII.polimorfismo.enviodenotas.Alumno;
 
 public interface Notificador {
 
-    public boolean soportasElMecanismoDe(String notificacion);
+    public boolean soportasElMecanismoDe(MecanismoDeNotificacion notificacion);
 
     public void enviarNotificacionA(Alumno alumno);
 
