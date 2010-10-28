@@ -20,8 +20,17 @@ public class VideoclubTest {
         Cliente alfredo = videoclub.buscarClientePorNombre("alfredo");
         assertNotNull(alfredo);
 
-        Cliente clienteQueNoExiste = videoclub.buscarClientePorNombre("noExiste");
-        assertNull(clienteQueNoExiste);
+        try {
+            videoclub.buscarClientePorNombre("noExiste");
+        } catch(ClienteNoEncontradoException e) {
+           return;
+        }
+        fail("no he lanzado la excepcion cliente no encontrado");
+
+        if (videoclub.esCliente("un fulano")) {
+            videoclub.buscarClientePorNombre("un fulano");
+        }
+
     }
 
     @Test
