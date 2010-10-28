@@ -26,7 +26,16 @@ public class Videoclub {
                 return cliente;
             }
         }
-        return null;
+        throw new ClienteNoEncontradoException();
+    }
+
+    boolean esCliente(String nombreCliente) {
+         for (Cliente cliente : clientes) {
+            if (cliente.tuNombreEs(nombreCliente)) {
+                return true;
+            }
+        }
+       return false;
     }
 
 
