@@ -28,6 +28,8 @@
 
 == Tema 6. API de colecciones ==
 
+    * [https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMjkyaDY1eDR3Z2o&hl=en Presentación colecciones]
+
 == Tema 7. API java.io ==
 == Tema 8. Algoritmia ==
 == Tema 9. Introducción a JDBC ==
