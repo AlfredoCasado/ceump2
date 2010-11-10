@@ -25,6 +25,7 @@
     *  [https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMjc4ZGZ0cTZmZnI&hl=en excepciones en java]
     * [https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMjgwZ3NqemM1Z20&hl=en logging con logj4] 
     * [EjerciciosExcepciones ejercicios excepciones]
+    * [EjerciciosLog4j ejercicios log4j]
 
 == Tema 6. API de colecciones ==
 
