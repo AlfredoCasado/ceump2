@@ -1,7 +1,8 @@
 package es.ceu.mpII.introduccion.ejerciciocargatrenes;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -10,8 +11,8 @@ public class AlmacenTest {
     @Test
     public void crearAlmacenConUnaMercancia() {
 
-        Mercancia[] mercancias = new Mercancia[1];
-        mercancias[0] = new Mercancia(1);
+        Set<Mercancia> mercancias = new TreeSet();
+        mercancias.add(new Mercancia(1));
         Almacen almacen = new Almacen(mercancias);
 
         assertTrue(almacen.noEstaVacio());

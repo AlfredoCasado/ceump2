@@ -11,6 +11,12 @@ public class TransformacionSubcadena implements Transformacion {
     }
 
     public String transformar(String cadenaATransformar) {
+        if (cadenaATransformar.length() < fin) {
+            throw new TransformacionException("fin es: " + fin +
+                                              " y la cadena solo tiene longitud: "
+                                              + cadenaATransformar.length());
+        }
+
         return cadenaATransformar.substring(inicio, fin);
     }
 
