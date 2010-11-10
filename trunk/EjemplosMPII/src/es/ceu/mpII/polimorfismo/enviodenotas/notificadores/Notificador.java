@@ -6,6 +6,6 @@ public interface Notificador {
 
     public boolean soportasElMecanismoDe(MecanismoDeNotificacion notificacion);
 
-    public void enviarNotificacionA(Alumno alumno);
+    public void enviarNotificacionA(Alumno alumno) throws ExcepcionDeNotificacion;
 
 }

@@ -11,7 +11,7 @@ public class TransformacionesCadenasTest {
     @Test
     public void deberiaRealizarUnaTransformacionCompuesta() {
         Transformacion[] transformaciones = new Transformacion[3];
-        transformaciones[0] = new TransformacionSubcadena(0,7);
+        transformaciones[0] = new TransformacionSubcadena(0,300);
         transformaciones[1] = new TransformacionMayusculas();
         transformaciones[2] = new TransformacionConcatenar("@gmail.es");
 

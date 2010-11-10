@@ -1,0 +1,96 @@
+INFO  2010-11-10 19:02:27,968 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2010-11-10 19:02:27,984 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-10 19:02:27,984 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+ERROR 2010-11-10 19:05:54,375 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - error enviando notificacion a:alfredo8
+es.ceu.mpII.polimorfismo.enviodenotas.notificadores.ExcepcionDeNotificacion: el servidor de mail esta roto
+	at es.ceu.mpII.polimorfismo.enviodenotas.notificadores.NotificadorMail.enviarNotificacionA(NotificadorMail.java:16)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificacion(SistemaEnvioNotificaciones.java:34)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificaciones(SistemaEnvioNotificaciones.java:25)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificacionesTest.verificarQueFuncionaElSistemaDeEnvioDeNotificaciones(SistemaEnvioNotificacionesTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:515)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1031)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:888)
+INFO  2010-11-10 19:05:54,390 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-10 19:05:54,390 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2010-11-10 19:08:48,640 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2010-11-10 19:08:48,640 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-10 19:08:48,640 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2010-11-10 19:08:53,671 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2010-11-10 19:08:53,671 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-10 19:08:53,671 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+ERROR 2010-11-10 19:08:58,718 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - error enviando notificacion a:alfredo8
+es.ceu.mpII.polimorfismo.enviodenotas.notificadores.ExcepcionDeNotificacion: el servidor de mail esta roto
+	at es.ceu.mpII.polimorfismo.enviodenotas.notificadores.NotificadorMail.enviarNotificacionA(NotificadorMail.java:16)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificacion(SistemaEnvioNotificaciones.java:34)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificaciones(SistemaEnvioNotificaciones.java:25)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificacionesTest.verificarQueFuncionaElSistemaDeEnvioDeNotificaciones(SistemaEnvioNotificacionesTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:515)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1031)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:888)
+INFO  2010-11-10 19:08:58,734 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+ERROR 2010-11-10 19:08:58,734 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - error enviando notificacion a:julian2
+es.ceu.mpII.polimorfismo.enviodenotas.notificadores.ExcepcionDeNotificacion: el servidor de mail esta roto
+	at es.ceu.mpII.polimorfismo.enviodenotas.notificadores.NotificadorMail.enviarNotificacionA(NotificadorMail.java:16)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificacion(SistemaEnvioNotificaciones.java:34)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificaciones(SistemaEnvioNotificaciones.java:25)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificacionesTest.verificarQueFuncionaElSistemaDeEnvioDeNotificaciones(SistemaEnvioNotificacionesTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:515)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1031)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:888)
