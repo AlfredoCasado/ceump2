@@ -94,3 +94,9 @@ es.ceu.mpII.polimorfismo.enviodenotas.notificadores.ExcepcionDeNotificacion: el 
 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:515)
 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1031)
 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:888)
+INFO  2010-11-11 19:33:32,156 com.foo.Bar - mensaje info
+WARN  2010-11-11 19:33:32,156 com.foo - mensaje warning
+ERROR 2010-11-11 19:33:32,156 com.foo.Bar - mensaje error
+INFO  2010-11-11 19:33:32,968 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2010-11-11 19:33:32,968 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-11 19:33:32,968 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
