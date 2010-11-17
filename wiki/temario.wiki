@@ -12,6 +12,8 @@
   * [https://docs.google.com/document/pub?id=1ZzMALGF8DKkTPrZcbVswFna6oO9Wi46DJ56OTPyU0sI Ejercicio carga de trenes]
   * [https://docs.google.com/document/pub?id=1MavX8Dorci9tEpPDvZxnWCzwVORxQlErFHpLpysHxOM Ejemplo videoclub]
   * [https://docs.google.com/View?docID=0ARBRBLT5BjpiZGhwMzY2ZmRfMjc3Y204cHg4Yzc&revision=_latest Ejemplo envío notificaciones]
+  * [https://docs.google.com/Doc?docid=0ARBRBLT5BjpiZGhwMzY2ZmRfMjgyZnM4OGhtY2s&hl=en calculo de nominas]
+  * [https://docs.google.com/Doc?docid=0ARBRBLT5BjpiZGhwMzY2ZmRfMjg1ajI0bXFuaHE&hl=en transformación de cadenas]
 
 == Tema 3. Introducción al lenguaje de modelado visual UML ==
   
