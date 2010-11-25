@@ -37,6 +37,6 @@ public class SistemaEnvioNotificaciones {
             log.info("mensaje enviado al usuario: " + alumno);
         } catch (ExcepcionDeNotificacion ex) {
             log.error("error enviando notificacion a:" + alumno, ex);
-        }
+        } 
     }
 }
