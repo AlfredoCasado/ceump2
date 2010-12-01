@@ -3,7 +3,7 @@ package es.ceu.mpII.cajero;
 public class Cajero {
 
     private Menu menu;
-
+    
     public Cajero(Menu menu) {
         this.menu = menu;
     }
