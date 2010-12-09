@@ -34,6 +34,9 @@
     * [https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMjkyaDY1eDR3Z2o&hl=en Presentación colecciones]
 
 == Tema 7. API java.io ==
+
+    * [https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMjk1Zmo3bjh3aGY&hl=en Presentación de java IO]
+
 == Tema 8. Algoritmia ==
 == Tema 9. Introducción a JDBC ==
 == Tema 10. Pruebas unitarias ==
