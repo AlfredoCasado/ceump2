@@ -1,6 +1,5 @@
 package es.ceu.mpII.colecciones.agendaTelefonica;
 
-import es.ceu.mpII.colecciones.agendaTelefonica.AgendaTelefonica;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
