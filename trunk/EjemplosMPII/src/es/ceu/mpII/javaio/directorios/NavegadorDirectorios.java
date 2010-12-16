@@ -2,7 +2,7 @@
 package es.ceu.mpII.javaio.directorios;
 
 import java.io.File;
-import java.io.FilenameFilter;
+import java.io.FileFilter;
 
 class NavegadorDirectorios {
     private final File ficheroRaiz;
@@ -16,9 +16,9 @@ class NavegadorDirectorios {
     }
 
     private void recorrerDirectoriosRecursivo(File ficheroRaiz, VisitorDirectorio visitorDirectorio) {
-        File[] hijos = ficheroRaiz.listFiles(new FilenameFilter() {
-            public boolean accept(File dir, String name) {
-                return dir.isDirectory();
+        File[] hijos = ficheroRaiz.listFiles(new FileFilter() {
+            public boolean accept(File pathname) {
+                return pathname.isDirectory();
             }
         });
 
@@ -26,7 +26,7 @@ class NavegadorDirectorios {
 
         for (File file : hijos) {
             recorrerDirectoriosRecursivo(file, visitorDirectorio);
-            visitorDirectorio.directorio(file);
+            visitorDirectorio.directorioEncontrado(file);
         }
     }
 }

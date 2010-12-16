@@ -4,6 +4,6 @@ import java.io.File;
 
 public interface VisitorDirectorio {
 
-    void directorio(File directorio);
+    void directorioEncontrado(File directorio);
 
 }

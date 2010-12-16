@@ -6,11 +6,11 @@ public class RecorrerDirectoriosRecursivamente {
 
     public static void main(String[] args) {
 
-        NavegadorDirectorios navegador = new NavegadorDirectorios("C:/");
+        NavegadorDirectorios navegador = new NavegadorDirectorios("D:/");
 
         navegador.recorrerDirectorios(new VisitorDirectorio() {
-            public void directorio(File directorio) {
-                System.out.println(directorio.getName());
+            public void directorioEncontrado(File directorio) {
+                System.out.println(directorio.getAbsolutePath());
             }
         });
 
