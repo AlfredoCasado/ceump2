@@ -1,3 +1,5 @@
 = Enunciados de exámenes y prácticas =
 
   * [http://code.google.com/p/ceump2/downloads/detail?name=ExamenPrimerParcial-Curso-2010-2011.odt&can=2&q= primer parcial]
+
+  * [https://docs.google.com/document/d/1PYEtg4XI_BGEI7KASgQcg1ZqtXE3Lpp-M00QVHYeIgY/edit?hl=en primera práctica]
