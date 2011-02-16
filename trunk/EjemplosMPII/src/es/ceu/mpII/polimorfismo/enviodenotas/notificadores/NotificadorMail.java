@@ -10,12 +10,7 @@ public class NotificadorMail implements Notificador {
     }
 
     public void enviarNotificacionA(Alumno alumno) throws ExcepcionDeNotificacion {
-        Random random = new Random();
-        int num = random.nextInt(3);
-        if (num == 0) {
-            throw new ExcepcionDeNotificacion("el servidor de mail esta roto");
-        }
-
+     
         System.out.println("notificacion por mail enviada a: " + alumno);
     }
 
