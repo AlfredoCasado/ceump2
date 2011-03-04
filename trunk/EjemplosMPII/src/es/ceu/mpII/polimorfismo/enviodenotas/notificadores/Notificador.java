@@ -1,11 +1,23 @@
 package es.ceu.mpII.polimorfismo.enviodenotas.notificadores;
 
 import es.ceu.mpII.polimorfismo.enviodenotas.Alumno;
+import es.ceu.mpII.polimorfismo.enviodenotas.repositorio.HistoricoDeNotificaciones;
 
-public interface Notificador {
+public abstract class Notificador {
 
-    public boolean soportasElMecanismoDe(MecanismoDeNotificacion notificacion);
+    private final HistoricoDeNotificaciones historicoNotificaciones;
 
-    public void enviarNotificacionA(Alumno alumno) throws ExcepcionDeNotificacion;
+    public Notificador(HistoricoDeNotificaciones historicoNotificaciones) {
+        this.historicoNotificaciones = historicoNotificaciones;
+    }
+
+    public abstract boolean soportasElMecanismoDe(MecanismoDeNotificacion notificacion);
+
+    public void enviarNotificacionA(Alumno alumno) throws ExcepcionDeNotificacion {
+        enviarNotificacionConcreta(alumno);
+        historicoNotificaciones.registrarNotificacionA(alumno);
+    }
+
+    public abstract void enviarNotificacionConcreta(Alumno alumno);
 
 }

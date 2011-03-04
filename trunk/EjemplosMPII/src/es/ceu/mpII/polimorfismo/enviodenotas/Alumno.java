@@ -16,7 +16,7 @@ public class Alumno {
 
     }
 
-    MecanismoDeNotificacion dimeTuTipoDeNotificacion() {
+    public MecanismoDeNotificacion dimeTuTipoDeNotificacion() {
         return tipoNoficacion;
     }
 
@@ -25,6 +25,10 @@ public class Alumno {
         return nombreAlumno + notaMedia;
     }
 
+    public String nombre() {
+        return nombreAlumno;
+    }
 
+ 
 
 }
