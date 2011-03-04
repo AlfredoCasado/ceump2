@@ -6,4 +6,6 @@ public interface RepositorioAlumnos {
 
     public Alumno[] dameTodosLosAlumnos();
 
+    public void crear(Alumno alumno);
+
 }

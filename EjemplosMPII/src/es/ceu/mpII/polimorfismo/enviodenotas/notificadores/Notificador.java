@@ -11,13 +11,12 @@ public abstract class Notificador {
         this.historicoNotificaciones = historicoNotificaciones;
     }
 
-    public abstract boolean soportasElMecanismoDe(MecanismoDeNotificacion notificacion);
-
     public void enviarNotificacionA(Alumno alumno) throws ExcepcionDeNotificacion {
         enviarNotificacionConcreta(alumno);
         historicoNotificaciones.registrarNotificacionA(alumno);
     }
 
+    public abstract boolean soportasElMecanismoDe(MecanismoDeNotificacion notificacion);
     public abstract void enviarNotificacionConcreta(Alumno alumno);
 
 }

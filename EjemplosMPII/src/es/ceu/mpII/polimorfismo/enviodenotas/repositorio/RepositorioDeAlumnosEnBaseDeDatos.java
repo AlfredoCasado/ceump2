@@ -4,6 +4,7 @@ import es.ceu.mpII.polimorfismo.enviodenotas.Alumno;
 import es.ceu.mpII.polimorfismo.enviodenotas.notificadores.MecanismoDeNotificacion;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -11,14 +12,20 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class RepositorioDeAlumnosEnBaseDeDatos implements RepositorioAlumnos {
+    
+    private final ProveedorDeConexionesABaseDeDatos proveedorConexiones;
 
+    public RepositorioDeAlumnosEnBaseDeDatos(ProveedorDeConexionesABaseDeDatos proveedorConexiones) {
+        this.proveedorConexiones = proveedorConexiones;
+    }
+    
     public Alumno[] dameTodosLosAlumnos() {
         Connection connection = null;
         ResultSet result = null;
         try {
             Set<Alumno> alumnos = new HashSet();
             
-            connection = obtenerLaConexion();
+            connection = proveedorConexiones.obtenerLaConexion();
             result = ejecutarConsultaParaObtenerTodosLosAlumnos(connection);
             
             while(result.next()) {
@@ -65,13 +72,22 @@ public class RepositorioDeAlumnosEnBaseDeDatos implements RepositorioAlumnos {
         
     }
 
-    private Connection obtenerLaConexion() throws SQLException {
-        final String url = "jdbc:mysql://localhost:3306/EnvioDeNotas";
-        final String usuario = "root";
-        final String passwd = "";
-        
-        final Connection connection = DriverManager.getConnection(url,usuario,passwd);
-        return connection;
+    public void crear(Alumno alumno) {
+        Connection connection = null;
+        ResultSet result = null;
+        try {
+            connection = proveedorConexiones.obtenerLaConexion();
+            PreparedStatement queryInsercionAlumno = connection.prepareStatement("INSERT INTO Alumno (Nombre,NotaMedia,MecanismoNotificacion,Direccion) VALUES(?,?,?,?)");
+            queryInsercionAlumno.setString(1, alumno.nombre());
+            queryInsercionAlumno.setInt(2, alumno.notaMedia());
+            queryInsercionAlumno.setString(3, alumno.dimeTuTipoDeNotificacion().toString());
+            queryInsercionAlumno.setString(4, alumno.direccion());
+            queryInsercionAlumno.executeUpdate();
+        } catch (SQLException ex) {
+            throw new RuntimeException("error creando alumno", ex);
+        } finally {
+            cerrarRecursosDeBaseDeDatos(connection, result);
+        }
     }
 
-}
+ }
