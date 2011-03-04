@@ -13,22 +13,27 @@ public class Alumno {
         this.notaMedia = notaMedia;
         this.tipoNoficacion = tipoNoficacion;
         this.direccion = direccion;
-
     }
 
     public MecanismoDeNotificacion dimeTuTipoDeNotificacion() {
         return tipoNoficacion;
     }
 
-    @Override
-    public String toString() {
-        return nombreAlumno + notaMedia;
-    }
-
     public String nombre() {
         return nombreAlumno;
     }
 
- 
+    public int notaMedia() {
+        return notaMedia;
+    }
+
+    public String direccion() {
+        return direccion;
+    }
+
+    @Override
+    public String toString() {
+        return nombreAlumno + notaMedia;
+    } 
 
 }

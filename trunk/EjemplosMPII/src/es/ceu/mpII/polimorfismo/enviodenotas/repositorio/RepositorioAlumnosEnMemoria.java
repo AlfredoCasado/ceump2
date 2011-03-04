@@ -17,4 +17,6 @@ public class RepositorioAlumnosEnMemoria implements RepositorioAlumnos {
         return alumnos;
     }
 
+    public void crear(Alumno alumno) {}
+
 }
