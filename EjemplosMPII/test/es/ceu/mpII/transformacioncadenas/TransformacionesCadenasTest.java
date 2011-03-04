@@ -1,5 +1,10 @@
 package es.ceu.mpII.transformacioncadenas;
 
+import es.ceu.mpII.polimorfismo.transformacioncadenas.TransformacionCompuesta;
+import es.ceu.mpII.polimorfismo.transformacioncadenas.Transformacion;
+import es.ceu.mpII.polimorfismo.transformacioncadenas.TransformacionMayusculas;
+import es.ceu.mpII.polimorfismo.transformacioncadenas.TransformacionSubcadena;
+import es.ceu.mpII.polimorfismo.transformacioncadenas.TransformacionConcatenar;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

@@ -9,8 +9,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class RepositorioDeAlumnosEnBaseDeDatos implements RepositorioAlumnos {
 
@@ -70,7 +68,7 @@ public class RepositorioDeAlumnosEnBaseDeDatos implements RepositorioAlumnos {
     private Connection obtenerLaConexion() throws SQLException {
         final String url = "jdbc:mysql://localhost:3306/EnvioDeNotas";
         final String usuario = "root";
-        final String passwd = "root";
+        final String passwd = "";
         
         final Connection connection = DriverManager.getConnection(url,usuario,passwd);
         return connection;
