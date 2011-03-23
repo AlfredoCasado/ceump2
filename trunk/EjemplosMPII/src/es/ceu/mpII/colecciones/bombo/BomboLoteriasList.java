@@ -1,12 +1,13 @@
 package es.ceu.mpII.colecciones.bombo;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
 class BomboLoteriasList implements BomboLoterias {
 
-    private List<Integer> bombo = new ArrayList<Integer>();
+    private List<Integer> bombo = new LinkedList();
 
     public BomboLoteriasList(int numeroDeBolas) {
         for (int i = 1; i<=numeroDeBolas; i++) {
