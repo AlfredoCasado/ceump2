@@ -10,6 +10,7 @@
 == libros y otros materiales ==
 
   * libro [http://www.terra.es/personal/jfvelez/libro/libro.html técnicas avanzadas de diseño de software] de José Velez
+  * [http://martinfowler.com/eaaDev/uiArchs.html articulo] sobre arquitecturas de software para manejar interfaces de usuario de martin fowler
 
 == Webs de interes ==
 
