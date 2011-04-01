@@ -2,6 +2,7 @@
 package es.ceu.mpII.swing.models;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.util.Date;
 import javax.swing.table.AbstractTableModel;
 
@@ -20,7 +21,11 @@ class ModeloTablaFichero extends AbstractTableModel {
 
   public ModeloTablaFichero(File dir) {
     this.dir = dir;
-    this.filenames = dir.list();
+    this.filenames = dir.list(new FilenameFilter() {
+            public boolean accept(File file, String fileName) {
+                return !fileName.startsWith(".");
+            }
+        });
   }
 
   public int getColumnCount() { 

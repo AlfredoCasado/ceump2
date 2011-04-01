@@ -1,6 +1,7 @@
 package es.ceu.mpII.swing.models;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import javax.swing.event.TreeModelListener;
 import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
@@ -22,7 +23,7 @@ public class ModeloArbolFicheros implements TreeModel {
     }
 
     public int getChildCount(Object parent) {
-        String[] children = ((File) parent).list();
+        String[] children = childOf(parent);
         if (children == null) {
             return 0;
         }
@@ -30,15 +31,25 @@ public class ModeloArbolFicheros implements TreeModel {
     }
 
     public Object getChild(Object parent, int index) {
-        String[] children = ((File) parent).list();
+        String[] children = childOf(parent);;
         if ((children == null) || (index >= children.length)) {
             return null;
         }
-        return new MiFile((File) parent, children[index]);
+
+        return new File((File) parent, children[index]) {
+            @Override
+            public String toString() {
+                int numeroHijos = 0;
+                if (this.list() != null) {
+                    numeroHijos = this.list().length;
+                }
+                return this.getName() + "hijos:" + numeroHijos;
+            }
+        };
     }
 
     public int getIndexOfChild(Object parent, Object child) {
-        String[] children = ((File) parent).list();
+        String[] children = childOf(parent);
         if (children == null) {
             return -1;
         }
@@ -51,6 +62,14 @@ public class ModeloArbolFicheros implements TreeModel {
         return -1;
     }
 
+    private String[] childOf(Object parent) {
+        return ((File) parent).list(new FilenameFilter() {
+            public boolean accept(File file, String fileName) {
+                return !fileName.startsWith(".");
+            }
+        });
+    }
+
     // estos tres metodos no son necesarios en un árbol de solo lectura
     public void valueForPathChanged(TreePath path, Object newvalue) {
     }
@@ -59,18 +78,6 @@ public class ModeloArbolFicheros implements TreeModel {
     }
 
     public void removeTreeModelListener(TreeModelListener l) {
-    }
-}
-
-class MiFile extends File {
-
-    public MiFile(File parent, String child) {
-        super(parent, child);
-    }
-
-    @Override
-    public String toString() {
-        return getName();
     }
 }
 
