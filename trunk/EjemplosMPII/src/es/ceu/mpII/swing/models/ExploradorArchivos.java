@@ -40,7 +40,9 @@ public class ExploradorArchivos {
         JFrame ventanaPrincipal = new JFrame("Explorador de Archivos SWING");
         ventanaPrincipal.setLayout(new BorderLayout());
         ventanaPrincipal.getContentPane().add(panelExploradorArchivos);
+        ventanaPrincipal.setSize(800, 600);
         ventanaPrincipal.setVisible(true);
+        ventanaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) {
