@@ -35,10 +35,14 @@ public class ListadoDeAlumnosView extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         tableListadoDeAlumnos = new javax.swing.JTable();
+        buttonActualizar = new javax.swing.JButton();
 
         tableListadoDeAlumnos.setColumnSelectionAllowed(true);
+        tableListadoDeAlumnos.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
         jScrollPane1.setViewportView(tableListadoDeAlumnos);
         tableListadoDeAlumnos.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+
+        buttonActualizar.setText("Actualizar");
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
         this.setLayout(layout);
@@ -46,20 +50,25 @@ public class ListadoDeAlumnosView extends javax.swing.JPanel {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE)
+                    .add(buttonActualizar))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
+                .add(17, 17, 17)
+                .add(buttonActualizar)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton buttonActualizar;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tableListadoDeAlumnos;
     // End of variables declaration//GEN-END:variables

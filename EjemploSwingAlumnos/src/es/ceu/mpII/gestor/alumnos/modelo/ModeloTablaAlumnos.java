@@ -1,14 +1,16 @@
 package es.ceu.mpII.gestor.alumnos.modelo;
 
-import es.ceu.mpII.gestor.alumnos.infraestructura.RepositorioAlumnosEnMemoria;
+import es.ceu.mpII.gestor.alumnos.infraestructura.RepositorioAlumnos;
 import javax.swing.table.AbstractTableModel;
 
 public class ModeloTablaAlumnos extends AbstractTableModel {
 
-    private final Alumno[] alumnos;
+    private Alumno[] alumnos;
+    private final RepositorioAlumnos repositorioAlumnos;
 
-    public ModeloTablaAlumnos(RepositorioAlumnosEnMemoria repositorioAlumnosEnMemoria) {
-         alumnos = repositorioAlumnosEnMemoria.dameTodosLosAlumnos();
+    public ModeloTablaAlumnos(RepositorioAlumnos repositorioAlumnos) {
+         alumnos = repositorioAlumnos.dameTodosLosAlumnos();
+         this.repositorioAlumnos = repositorioAlumnos;
     }
 
     public int getRowCount() {
@@ -33,6 +35,12 @@ public class ModeloTablaAlumnos extends AbstractTableModel {
         if (col == 2) return "Nota Media";
         throw new RuntimeException();
     }
+
+    public void actualizar() {
+        alumnos = repositorioAlumnos.dameTodosLosAlumnos();
+        fireTableDataChanged();
+    }
+
 
 
 

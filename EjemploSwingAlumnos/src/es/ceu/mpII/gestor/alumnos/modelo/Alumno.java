@@ -1,6 +1,7 @@
 package es.ceu.mpII.gestor.alumnos.modelo;
 
-public class Alumno {
+public class Alumno implements Comparable<Alumno> {
+
     private final String nombreAlumno;
     private final int notaMedia;
     private final MecanismoDeNotificacion tipoNoficacion;
@@ -32,6 +33,10 @@ public class Alumno {
     @Override
     public String toString() {
         return nombreAlumno + notaMedia;
-    } 
+    }
+
+    public int compareTo(Alumno alumno) {
+        return this.nombreAlumno.compareTo(alumno.nombreAlumno);
+    }
 
 }
