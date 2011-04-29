@@ -42,14 +42,6 @@ class ConversorRomanoArabigo {
 
 }
 
-class Conversion {
 
-    public final String roman;
-    public final int arabigo;
 
-    public Conversion(String roman, int arabigo) {
-        this.roman = roman;
-        this.arabigo = arabigo;
-    }
 
-}
