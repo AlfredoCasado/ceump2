@@ -1,13 +1,13 @@
 package es.ceu.mpII.kata.maquina;
 
 enum Moneda {
-
-    CINCO(5),
-    DIEZ(10),
-    VEINTE(20),
-    CICUENTA(50),
+    
+    DOS_EUROS(200),
     UN_EURO(100),
-    DOS_EUROS(200);
+    CICUENTA(50),
+    VEINTE(20),
+    DIEZ(10),
+    CINCO(5);
 
     private final int centimos;
 
