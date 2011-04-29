@@ -38,6 +38,8 @@
     * [https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMjk1Zmo3bjh3aGY&hl=en Presentación de java IO]
 
 == Tema 8. Algoritmia ==
+
+   *[https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMzYxYzI0MzljZGI&hl=en introduccion a la algoritmia]
 == Tema 9. Introducción a JDBC ==
 
   * [https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMjgzY3poMjN3Y2c&hl=en presentación JDBC]
