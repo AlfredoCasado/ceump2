@@ -3,15 +3,17 @@ package es.ceu.mpII.algoritmia.voraz;
 import java.util.ArrayList;
 import java.util.List;
 
-class OrdenadorVoraz {
+public class OrdenadorVoraz {
 
-    List<Integer> ordenar(List<Integer> listaDesordenada) {
+    public List<Integer> ordenar(List<Integer> listaDesordenada) {
         List<Integer> listaOrdenada = new ArrayList();
+
         while(!listaDesordenada.isEmpty()) {
             Integer mayor = mayorDe(listaDesordenada);
             listaOrdenada.add(mayor);
             listaDesordenada.remove(mayor);
         }
+
         return listaOrdenada;
     }
 
