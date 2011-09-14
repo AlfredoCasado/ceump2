@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class CocheConFinalizadorTest {
 
     @Test
-    public void verificarQueSeInvocaAlfinalizador() {
+    public void verificarQueSeInvocaAlfinalizador() throws InterruptedException {
         ClaseConFinalizador cocheConFinalizador = new ClaseConFinalizador();
         assertEquals(1, ClaseConFinalizador.numeroDeInstanciasEnMemoriaDeLaClase());
         
@@ -20,10 +20,10 @@ public class CocheConFinalizadorTest {
         // ocasiones
         System.gc();
 
-        // al realizar una operación de I/O es mas probable que el GC encuentre un hueco para ejecutarse
-        // como curiosidad comentar la linea siguiente y ver como el test falla por que le GC no se activa
-        // antes de la linea de comprobación.
-        System.out.println("el GC ya ha sido invocado");
+        // al detener el hilo de ejecución el gc entra en juego y borra el objeto. Como curiosidad
+        // comentar la linea siguiente, al no parar este hilo el gc no entra en ejecución y por tanto
+        // no borra el objeto, como consecuencia el test no pasa.
+        Thread.sleep(1);
         assertEquals(0, ClaseConFinalizador.numeroDeInstanciasEnMemoriaDeLaClase());
     }
     
