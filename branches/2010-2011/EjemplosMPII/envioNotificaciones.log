@@ -1,0 +1,185 @@
+INFO  2010-11-10 19:02:27,968 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2010-11-10 19:02:27,984 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-10 19:02:27,984 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+ERROR 2010-11-10 19:05:54,375 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - error enviando notificacion a:alfredo8
+es.ceu.mpII.polimorfismo.enviodenotas.notificadores.ExcepcionDeNotificacion: el servidor de mail esta roto
+	at es.ceu.mpII.polimorfismo.enviodenotas.notificadores.NotificadorMail.enviarNotificacionA(NotificadorMail.java:16)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificacion(SistemaEnvioNotificaciones.java:34)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificaciones(SistemaEnvioNotificaciones.java:25)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificacionesTest.verificarQueFuncionaElSistemaDeEnvioDeNotificaciones(SistemaEnvioNotificacionesTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:515)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1031)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:888)
+INFO  2010-11-10 19:05:54,390 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-10 19:05:54,390 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2010-11-10 19:08:48,640 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2010-11-10 19:08:48,640 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-10 19:08:48,640 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2010-11-10 19:08:53,671 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2010-11-10 19:08:53,671 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-10 19:08:53,671 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+ERROR 2010-11-10 19:08:58,718 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - error enviando notificacion a:alfredo8
+es.ceu.mpII.polimorfismo.enviodenotas.notificadores.ExcepcionDeNotificacion: el servidor de mail esta roto
+	at es.ceu.mpII.polimorfismo.enviodenotas.notificadores.NotificadorMail.enviarNotificacionA(NotificadorMail.java:16)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificacion(SistemaEnvioNotificaciones.java:34)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificaciones(SistemaEnvioNotificaciones.java:25)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificacionesTest.verificarQueFuncionaElSistemaDeEnvioDeNotificaciones(SistemaEnvioNotificacionesTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:515)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1031)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:888)
+INFO  2010-11-10 19:08:58,734 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+ERROR 2010-11-10 19:08:58,734 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - error enviando notificacion a:julian2
+es.ceu.mpII.polimorfismo.enviodenotas.notificadores.ExcepcionDeNotificacion: el servidor de mail esta roto
+	at es.ceu.mpII.polimorfismo.enviodenotas.notificadores.NotificadorMail.enviarNotificacionA(NotificadorMail.java:16)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificacion(SistemaEnvioNotificaciones.java:34)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificaciones(SistemaEnvioNotificaciones.java:25)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificacionesTest.verificarQueFuncionaElSistemaDeEnvioDeNotificaciones(SistemaEnvioNotificacionesTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:515)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1031)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:888)
+INFO  2010-11-11 19:33:32,156 com.foo.Bar - mensaje info
+WARN  2010-11-11 19:33:32,156 com.foo - mensaje warning
+ERROR 2010-11-11 19:33:32,156 com.foo.Bar - mensaje error
+INFO  2010-11-11 19:33:32,968 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2010-11-11 19:33:32,968 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2010-11-11 19:33:32,968 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-02-16 18:48:54,000 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-02-16 18:48:54,015 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-02-16 18:48:54,015 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+ERROR 2011-02-16 19:58:03,031 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - error enviando notificacion a:alfredo8
+es.ceu.mpII.polimorfismo.enviodenotas.notificadores.ExcepcionDeNotificacion: el servidor de mail esta roto
+	at es.ceu.mpII.polimorfismo.enviodenotas.notificadores.NotificadorMail.enviarNotificacionA(NotificadorMail.java:16)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificacion(SistemaEnvioNotificaciones.java:34)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones.enviarNotificaciones(SistemaEnvioNotificaciones.java:25)
+	at es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificacionesTest.verificarQueFuncionaElSistemaDeEnvioDeNotificaciones(SistemaEnvioNotificacionesTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+INFO  2011-02-16 19:58:03,125 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-02-16 19:58:03,125 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-02-16 19:59:13,062 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-02-16 19:59:13,062 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-02-16 19:59:13,062 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-02-16 20:03:39,812 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-02-16 20:03:39,812 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-02-16 20:03:39,812 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-02-16 20:06:52,468 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-02-16 20:06:52,468 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-02-16 20:06:52,484 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-02-16 20:09:08,296 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-02-16 20:09:08,296 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-02-16 20:09:08,296 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-02-16 20:09:08,734 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Julian6
+INFO  2011-02-16 20:09:08,734 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Alfredo10
+INFO  2011-02-25 20:24:21,315 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-02-25 20:24:21,330 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-02-25 20:24:21,345 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-03-04 12:27:21,359 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-03-04 12:27:21,421 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-03-04 12:27:21,437 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-03-04 12:27:21,562 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Julian6
+INFO  2011-03-04 12:27:21,578 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Alfredo10
+INFO  2011-03-04 13:02:32,437 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-03-04 13:02:32,453 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-03-04 13:02:32,468 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-03-04 13:02:32,578 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Julian6
+INFO  2011-03-04 13:02:32,593 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Alfredo10
+INFO  2011-03-04 13:10:11,593 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-03-04 13:10:11,609 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-03-04 13:10:11,625 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-03-04 13:10:11,671 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Julian6
+INFO  2011-03-04 13:10:11,687 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Alfredo10
+INFO  2011-03-04 13:14:27,796 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-03-04 13:14:27,828 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-03-04 13:14:27,843 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-03-04 13:14:27,937 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Julian6
+INFO  2011-03-04 13:14:27,953 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Alfredo10
+INFO  2011-03-04 13:17:21,375 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo8
+INFO  2011-03-04 13:17:21,390 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro2
+INFO  2011-03-04 13:17:21,406 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: julian2
+INFO  2011-03-04 13:17:21,500 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Julian6
+INFO  2011-03-04 13:17:21,515 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: Alfredo10
+INFO  2011-03-04 13:53:03,781 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo10
+INFO  2011-03-04 14:14:03,531 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo10
+INFO  2011-03-04 14:14:03,625 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo10
+INFO  2011-03-04 14:14:03,640 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro10
+INFO  2011-03-04 14:14:03,656 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: juan10
+INFO  2011-03-04 18:33:57,701 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo10
+INFO  2011-03-04 18:33:57,812 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: juan10
+INFO  2011-03-04 18:33:57,825 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: pedro10
+INFO  2011-03-04 18:33:57,836 es.ceu.mpII.polimorfismo.enviodenotas.SistemaEnvioNotificaciones - mensaje enviado al usuario: alfredo10
