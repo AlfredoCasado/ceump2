@@ -67,7 +67,7 @@ public class CocheTest {
         Coche cocheQueVaA100 = new Coche(100,ROJO);
         Coche cocheQueVaA200 = new Coche(200,ROJO);
 
-        // a una propiedad estatica se puede acceder con "nombreCalse.nombrePropiedad" o bien
+        // a una propiedad estatica se puede acceder con "nombreClase.nombrePropiedad" o bien
         // a partir de cualquier instancia de la clase con "variableDeTipoCoche.nombrePropiedad"
         // el valor es el mismo en todos los casos que se trata de una proiedad estatica que se almacena
         // a nivel de clase en lugar de a nivel de instancia
