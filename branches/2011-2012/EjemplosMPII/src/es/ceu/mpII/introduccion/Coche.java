@@ -4,7 +4,7 @@ package es.ceu.mpII.introduccion;
 public class Coche {
 
     // propiedades
-    private int velocidad = 10;
+    private int velocidad = 30;
     public String color;
     public static int numeroDeCochesEnCirculacion = 0;
 
