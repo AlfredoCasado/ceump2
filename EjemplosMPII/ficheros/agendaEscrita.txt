@@ -1,4 +1,0 @@
-Pedro,4384934
-julian,666
-Juan,3747474
-Alfredo,1234560
