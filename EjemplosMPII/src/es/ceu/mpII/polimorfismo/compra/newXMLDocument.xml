@@ -1,0 +1,20 @@
+
+<p>mi_lista_de_la_compra</p>
+<table>
+    <td>
+        <tr>coca-cola</tr>
+        <tr>2</tr>
+        <tr>2</tr>
+        <tr>4</tr>
+    </td>
+    <td>
+        <tr>yogurt</tr>
+        <tr>1</tr>
+        <tr>9</tr>
+        <tr>9</tr>
+    </td>
+    <td>
+        <tr>13</tr>
+    </td>
+</table>
+
