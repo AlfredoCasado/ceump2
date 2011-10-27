@@ -18,5 +18,9 @@ public class Fecha {
         return dia+"/"+mes+"/"+anno;
     }
 
+    void sumarDias(int i) {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
+
 
 }
