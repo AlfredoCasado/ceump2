@@ -1,4 +1,4 @@
-package es.ceu.mpII.OO.polimorfismo;
+package es.ceu.mpII.OO.polimorfismo.redSocial;
 
 abstract class RedSocial {
     abstract void enviarEstado(String mensaje);
