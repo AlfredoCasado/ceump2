@@ -14,6 +14,7 @@
   * [https://docs.google.com/View?docID=0ARBRBLT5BjpiZGhwMzY2ZmRfMjc3Y204cHg4Yzc&revision=_latest Ejemplo envío notificaciones]
   * [https://docs.google.com/Doc?docid=0ARBRBLT5BjpiZGhwMzY2ZmRfMjgyZnM4OGhtY2s&hl=en calculo de nominas]
   * [https://docs.google.com/Doc?docid=0ARBRBLT5BjpiZGhwMzY2ZmRfMjg1ajI0bXFuaHE&hl=en transformación de cadenas]
+  * [https://docs.google.com/document/d/1vV7l194GBFPUS2EdJXoVQZOvP4Sc5BjpAD3VAi556q8/edit carteras de inversión]
 
 == Tema 3. Introducción al lenguaje de modelado visual UML ==
   
