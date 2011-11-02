@@ -7,14 +7,6 @@
 == Tema 2. Introducción a la P00 ==
 
   * [https://docs.google.com/present/view?id=dhp366fd_316fhb93fc8 Presentación - Introducción a la programación orientada a objetos]
-  
-=== Ejercicios ===
-  * [https://docs.google.com/document/pub?id=1ZzMALGF8DKkTPrZcbVswFna6oO9Wi46DJ56OTPyU0sI Ejercicio carga de trenes]
-  * [https://docs.google.com/document/pub?id=1MavX8Dorci9tEpPDvZxnWCzwVORxQlErFHpLpysHxOM Ejemplo videoclub]
-  * [https://docs.google.com/View?docID=0ARBRBLT5BjpiZGhwMzY2ZmRfMjc3Y204cHg4Yzc&revision=_latest Ejemplo envío notificaciones]
-  * [https://docs.google.com/Doc?docid=0ARBRBLT5BjpiZGhwMzY2ZmRfMjgyZnM4OGhtY2s&hl=en calculo de nominas]
-  * [https://docs.google.com/Doc?docid=0ARBRBLT5BjpiZGhwMzY2ZmRfMjg1ajI0bXFuaHE&hl=en transformación de cadenas]
-  * [https://docs.google.com/document/d/1vV7l194GBFPUS2EdJXoVQZOvP4Sc5BjpAD3VAi556q8/edit carteras de inversión]
 
 == Tema 3. Introducción al lenguaje de modelado visual UML ==
   
@@ -23,6 +15,14 @@
 == Tema 4. P00 en Java. API de Java ==
 
     *  [https://docs.google.com/present/view?id=dhp366fd_337cnj2g7gp El paquete java.lang]
+
+=== Ejercicios temas del 1 al 4 ===
+  * [https://docs.google.com/document/pub?id=1ZzMALGF8DKkTPrZcbVswFna6oO9Wi46DJ56OTPyU0sI Ejercicio carga de trenes]
+  * [https://docs.google.com/document/pub?id=1MavX8Dorci9tEpPDvZxnWCzwVORxQlErFHpLpysHxOM Ejemplo videoclub]
+  * [https://docs.google.com/View?docID=0ARBRBLT5BjpiZGhwMzY2ZmRfMjc3Y204cHg4Yzc&revision=_latest Ejemplo envío notificaciones]
+  * [https://docs.google.com/Doc?docid=0ARBRBLT5BjpiZGhwMzY2ZmRfMjgyZnM4OGhtY2s&hl=en calculo de nominas]
+  * [https://docs.google.com/Doc?docid=0ARBRBLT5BjpiZGhwMzY2ZmRfMjg1ajI0bXFuaHE&hl=en transformación de cadenas]
+  * [https://docs.google.com/document/d/1vV7l194GBFPUS2EdJXoVQZOvP4Sc5BjpAD3VAi556q8/edit carteras de inversión]
 
 == Tema 5. Tratamiento de excepciones ==
     *  [https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMjc4ZGZ0cTZmZnI&hl=en excepciones en java]
