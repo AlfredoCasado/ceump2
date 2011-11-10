@@ -1,7 +1,19 @@
 package es.ceu.mpII.nominas;
 
-interface Empleado {
+abstract class Empleado {
 
-    void pintarNomina();
+    private String nombre;
+
+    public Empleado(String nombre) {
+        this.nombre = nombre;
+    }
+
+    void pintarNomina() {
+         System.out.println(nombre + " Empleado " + tipo() + ": " + nomina());
+    }
+
+    protected abstract String tipo();
+
+    protected abstract int nomina();
 
 }
