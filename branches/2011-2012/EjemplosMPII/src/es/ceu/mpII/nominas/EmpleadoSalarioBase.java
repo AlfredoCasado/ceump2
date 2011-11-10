@@ -1,17 +1,22 @@
 package es.ceu.mpII.nominas;
 
-class EmpleadoSalarioBase implements Empleado {
+class EmpleadoSalarioBase extends Empleado {
 
-    private final String nombre;
     private final int salarioBase;
 
     public EmpleadoSalarioBase(String nombre, int salarioBase) {
-        this.nombre = nombre;
+        super(nombre);
         this.salarioBase = salarioBase;
     }
 
-    public void pintarNomina() {
-        System.out.println(nombre + "Empleado con salario base " + salarioBase);
+    @Override
+    protected String tipo() {
+        return "con salario base";
+    }
+
+    @Override
+    protected int nomina() {
+        return salarioBase;
     }
 
 }

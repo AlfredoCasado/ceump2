@@ -1,18 +1,23 @@
 package es.ceu.mpII.nominas;
 
-class EmpleadoPorHoras implements Empleado {
-    private final String nombre;
-    private final int numeroHoras;
+class EmpleadoPorHoras extends Empleado {
+    private final int importePorHora;
     private final int horasTrabajadas;
 
     public EmpleadoPorHoras(String nombre, int importePorHora, int horasTrabajadas) {
-        this.nombre = nombre;
-        this.numeroHoras = importePorHora;
+        super(nombre);
+        this.importePorHora = importePorHora;
         this.horasTrabajadas = horasTrabajadas;
     }
 
-    public void pintarNomina() {
-        System.out.println(nombre + "Empleado por horas " + numeroHoras*horasTrabajadas);
+    @Override
+    protected String tipo() {
+        return "por horas";
+    }
+
+    @Override
+    protected int nomina() {
+        return importePorHora*horasTrabajadas;
     }
 
 }

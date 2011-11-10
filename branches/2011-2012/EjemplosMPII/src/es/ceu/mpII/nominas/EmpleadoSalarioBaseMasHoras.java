@@ -1,8 +1,7 @@
 package es.ceu.mpII.nominas;
 
-class EmpleadoSalarioBaseMasHoras implements Empleado {
+class EmpleadoSalarioBaseMasHoras extends Empleado {
 
-    private final String nombre;
     private final int salarioBase;
     private final int importePorHora;
     private final int horasTrabajadas;
@@ -11,17 +10,21 @@ class EmpleadoSalarioBaseMasHoras implements Empleado {
                                        int salarioBase,
                                        int importePorHora,
                                        int horasTrabajadas) {
-        this.nombre = nombre;
+        super(nombre);
         this.salarioBase = salarioBase;
         this.importePorHora = importePorHora;
         this.horasTrabajadas = horasTrabajadas;
     }
 
-    public void pintarNomina() {
-        long nomina = salarioBase + importePorHora*horasTrabajadas;
-        System.out.println(nombre + "Empleado con salario base mas horas "
-                           + nomina);
-
+    @Override
+    protected String tipo() {
+        return "con salario base mas horas";
     }
 
+    @Override
+    protected int nomina() {
+        return salarioBase+importePorHora*horasTrabajadas;
+    }
+
+   
 }
