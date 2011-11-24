@@ -25,6 +25,10 @@ public class AgendaTelefonica {
         return agenda.containsKey(nombreDelUsuario);
     }
 
+    String nombreDelUsuarioCon(String telefono) {
+        return null;
+    }
+
     public void pintarAgendaRecorrerConEntry() {
         Set<Entry<String,String>> entradasDeLaAgenda = agenda.entrySet();
         for (Entry<String, String> entrada : entradasDeLaAgenda) {
