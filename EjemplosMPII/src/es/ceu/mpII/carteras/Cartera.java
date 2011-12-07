@@ -18,4 +18,10 @@ public class Cartera {
         return total;
     }
 
+    public void actualizar() {
+        for (Inversion inversion : inversiones) {
+            inversion.actualizar();
+        }
+    }
+
 }
