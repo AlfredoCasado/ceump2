@@ -1,28 +1,39 @@
 package es.ceu.mpII.carteras;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
-import org.junit.Test;
-import static org.junit.Assert.*;
 
-public class AccionTest {
+class AlmacenCarteras {
 
     public static final int COTIZACION_100_PUNTOS = 100;
     public static final int COTIZACION_10_PUNTOS = 10;
     public static final int UNIDADES_10 = 10;
     public static final int UNIDADES_20 = 20;
 
-    @Test
-    public void calcular_el_valor_para_una_cartera_con_dos_inversiones() {
-        Cartera tecnologicas = crearCarteraTecnologicas();
-        assertEquals(1200, tecnologicas.total());
+
+    private Set<Cartera> carteras = new HashSet();
+    private Iterator<Cartera> it_cartera;
+
+    public AlmacenCarteras() {
+        carteras.add(crearCarteraTecnologicas());
+        it_cartera = carteras.iterator();
     }
 
-    @Test
-    public void actualizacion_carteras() {
-        Cartera tecnologicas = crearCarteraTecnologicas();
-        tecnologicas.actualizar();
-        assertEquals(3000, tecnologicas.total());
+    boolean haySiguiente() {
+        return it_cartera.hasNext();
+    }
+
+    Cartera siguienteCartera() {
+        return it_cartera.next();
+    }
+
+    void guardarActualizada(Cartera carteraAActualizar) {
+        carteras.add(carteraAActualizar);
+    }
+
+    void volverAlPrincipio() {
+        it_cartera = carteras.iterator();
     }
 
     private Cartera crearCarteraTecnologicas() {
@@ -38,19 +49,6 @@ public class AccionTest {
         inversionesTecnologicas.add(new Inversion(UNIDADES_20, telefonica, eurobits));
 
         return new Cartera(inversionesTecnologicas);
-    }
-
-    @Test
-    public void actualizarTodaslasCarteras() {
-
-        AlmacenCarteras almacen = new AlmacenCarteras();
-        ActualizadorCarteras actualizador = new ActualizadorCarteras(almacen);
-        actualizador.ActualizarTodasLasCarteras();
-
-
-        almacen.volverAlPrincipio();
-        assertEquals(3000, almacen.siguienteCartera().total());
-
     }
 
 }
