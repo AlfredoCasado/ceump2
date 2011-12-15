@@ -29,6 +29,7 @@
     * [https://docs.google.com/present/edit?id=0ARBRBLT5BjpiZGhwMzY2ZmRfMjgwZ3NqemM1Z20&hl=en logging con logj4] 
     * [EjerciciosExcepciones ejercicios excepciones]
     * [EjerciciosLog4j ejercicios log4j]
+    * [Examen ejemplo https://docs.google.com/document/d/1oAAKLWatfVizveVdL0VILfjYtYI5z8YxQ_iYG-iRjCg/edit]
 
 == Tema 6. API de colecciones ==
 
