@@ -6,7 +6,7 @@ import java.util.Set;
 public abstract class ElementoConPermisos {
 
     Set<Permiso> permisos;
-    Set<Grupo> gruposALosQuePertenece;
+    Set<Grupo> gruposALosQuePertenece = new HashSet();
 
     public ElementoConPermisos(Set<Permiso> permisos) {
         this.permisos = permisos;
