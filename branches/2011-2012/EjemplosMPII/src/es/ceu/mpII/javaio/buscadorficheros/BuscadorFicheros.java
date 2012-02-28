@@ -10,13 +10,18 @@ interface FicheroEncontrado {
 
 public class BuscadorFicheros {
     
-    private static File directorioRaiz = new File("/Users/alfredocasado/");
+    private static File directorioRaiz = new File("/Users/alfredocasado/git/unience/web/unience");
     
     public static void main(String[] args) {
         
+        Set<String> directoriosAExcluir = new HashSet();
+        directoriosAExcluir.add("services");
+        directoriosAExcluir.add("conf");
+        directoriosAExcluir.add("grails-app");
+        
         BuscadorFicheros buscador = new BuscadorFicheros();
         
-        buscador.buscarficherosConExtension("css", new FicheroEncontrado() {
+        buscador.buscarficherosConExtension("groovy", directoriosAExcluir, new FicheroEncontrado() {
             @Override
             public void ficheroEncontrado(File fichero) {
                 System.out.println(fichero.getAbsoluteFile());
@@ -25,16 +30,16 @@ public class BuscadorFicheros {
         
     }
     
-    private void buscarficherosConExtension(String extension, FicheroEncontrado ficheroEncontrado) {
-        navegarRecursivo(directorioRaiz, extension, ficheroEncontrado);
+    private void buscarficherosConExtension(String extension, Set<String> directoriosAExcluir, FicheroEncontrado ficheroEncontrado) {
+        navegarRecursivo(directorioRaiz, extension, ficheroEncontrado, directoriosAExcluir);
     }
     
-    private void navegarRecursivo(File directorio, String extension, FicheroEncontrado ficheroEncontrado) {
+    private void navegarRecursivo(File directorio, String extension, FicheroEncontrado ficheroEncontrado,Set<String> directoriosAExcluir) {
         File[] hijos = directorio.listFiles();
         
         for (File hijo : hijos) {
-            if (hijo.isDirectory()) {
-               navegarRecursivo(hijo, extension, ficheroEncontrado);
+            if (hijo.isDirectory() && !directoriosAExcluir.contains(hijo.getName())) {
+               navegarRecursivo(hijo, extension, ficheroEncontrado,directoriosAExcluir);
             } else if (hijo.getName().endsWith(extension)) {
                ficheroEncontrado.ficheroEncontrado(hijo);
             }
