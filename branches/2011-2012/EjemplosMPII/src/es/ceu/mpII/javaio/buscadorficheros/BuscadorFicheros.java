@@ -36,7 +36,7 @@ public class BuscadorFicheros {
     
     private void navegarRecursivo(File directorio, String extension, FicheroEncontrado ficheroEncontrado,Set<String> directoriosAExcluir) {
         File[] hijos = directorio.listFiles();
-        
+       
         for (File hijo : hijos) {
             if (hijo.isDirectory() && !directoriosAExcluir.contains(hijo.getName())) {
                navegarRecursivo(hijo, extension, ficheroEncontrado,directoriosAExcluir);
