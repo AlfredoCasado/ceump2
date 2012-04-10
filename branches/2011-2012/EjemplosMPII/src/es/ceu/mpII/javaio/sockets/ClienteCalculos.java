@@ -12,10 +12,17 @@ public class ClienteCalculos {
     public ClienteCalculos(final String host,final int puerto) {
         this.host = host;
         this.puerto = puerto;
-        
     }
 
     public int enviarPeticionCalculoSuma(final int primerOperando,final int segundoOperando) throws IOException {
+        return enviarPeticionCalculo(primerOperando, segundoOperando, '+');
+    }
+    
+    public int enviarPeticionCalculoResta(final int primerOperando,final int segundoOperando) throws IOException {
+        return enviarPeticionCalculo(primerOperando, segundoOperando, '-');
+    }
+
+    private int enviarPeticionCalculo(final int primerOperando, final int segundoOperando, final char operacion) throws IOException {
         System.out.println("conectando con el servidor....");
         final Socket conexion = new Socket(host,puerto);
 
@@ -24,6 +31,7 @@ public class ClienteCalculos {
         final DataInputStream dis = new DataInputStream(conexion.getInputStream());
         dos.writeInt(primerOperando);
         dos.writeInt(segundoOperando);
+        dos.writeChar(operacion);
 
         System.out.println("peticion de calculo enviada, esperando respuesta...");
         final int resultado = dis.readInt();
