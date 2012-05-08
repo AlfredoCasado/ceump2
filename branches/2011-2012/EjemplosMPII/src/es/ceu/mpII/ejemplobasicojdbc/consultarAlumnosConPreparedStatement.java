@@ -21,8 +21,11 @@ public class consultarAlumnosConPreparedStatement {
 
         final Connection connection = DriverManager.getConnection(url,usuario,passwd);
 
-        final PreparedStatement queryTodosLosAlumnos = connection.prepareStatement("SELECT * FROM alumnos WHERE Apellido = ?");
+        final PreparedStatement queryTodosLosAlumnos = connection.
+                                                       prepareStatement("SELECT * FROM alumnos WHERE Apellido = ?");
+       
         queryTodosLosAlumnos.setString(1, apellido);
+        
         ResultSet alumnos = queryTodosLosAlumnos.executeQuery();
         
         while (alumnos.next()) {

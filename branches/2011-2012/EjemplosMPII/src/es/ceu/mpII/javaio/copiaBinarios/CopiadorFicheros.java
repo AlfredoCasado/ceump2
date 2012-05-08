@@ -11,8 +11,8 @@ import java.io.OutputStream;
 public class CopiadorFicheros {
 
     void copiaByteAByte(String nombreFicheroACopiar) throws IOException {
-        FileInputStream in = null;
-        FileOutputStream out = null;
+        InputStream in = null;
+        OutputStream out = null;
         try {
             in = new FileInputStream(nombreFicheroACopiar);
             out = new FileOutputStream(nombreFicheroACopiar + "_copia");
@@ -70,6 +70,7 @@ public class CopiadorFicheros {
     }
 
     private void copiaDeInputStreamAUnOutputStreamByteAByte(InputStream in, OutputStream out) throws IOException {
+       
         int b;
 
         while ((b = in.read()) != -1) {
