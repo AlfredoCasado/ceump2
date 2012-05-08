@@ -44,6 +44,7 @@ public class Agenda {
     
     public void escribirAFichero(String rutaDelFichero) throws IOException {
         
+ 
         FileWriter fileWriter = new FileWriter(rutaDelFichero);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
         
@@ -54,7 +55,6 @@ public class Agenda {
         
         bufferedWriter.close();
         fileWriter.close();
-        
         
     }
     
